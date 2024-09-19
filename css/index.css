@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, black, #422876);
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid #fff0ca;
+    box-sizing: border-box;
+}
+
+img:hover {
+    border: 10px solid #fff0ca;
+    transition: 0.1s;
+}
+
+img:not(:hover) {
+    border: 4px solid #fff0ca;
+    transition: 0.2s;
+}
+
+section {
+    background-color: #bfafdd;
+    border-radius: 30px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.418);
+    margin: auto;
+    min-width: 600px;
+    height: 100px;
+    max-width: 1000px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    background-color: #fff0ca;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.418);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+a:hover {
+    height: 45px;
+    width: 155px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.418);
+
+    transition: 0.2s;
+}
+
+a:not(:hover) {
+    height: 40px;
+    width: 150px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.418);
+
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 650px){
+    h1 {
+        font-size: 2.5em;
+    }
+
+    img {
+        height: 250px;
+        width: 250px;
+    }
+
+    section {
+        min-width: none;
+        height: 400px;
+        min-width: 200px;
+        max-width: 400px;
+
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    a {
+        width: 300px;
+        padding: 25px;
+        margin: 20px;
+    }
+
+    a:hover {
+        width: 200px;
+    }
+
+    a:not(:hover) {
+        width: 300px;
+    }
+    }

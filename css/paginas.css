@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #422876;
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    margin: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#opçoes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    width: 500px;
+}
+
+#voltar {
+    width: 30px;
+}
+
+#voltar:hover {
+    width: 32px;
+}
+
+#voltar:not(:hover) {
+    width: 30px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    background-color: #fff0ca;
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.418);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    width: 155px;
+
+    transition-duration: 0.2s;
+}
+
+a:not(:hover) {
+    width: 150px;
+
+    transition: 0.2s;
+}
+
+main {
+    background-color: #DBCEF5;
+    margin: auto;
+    margin: 40px;
+    margin-top: 0px;
+    min-width: 350px;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+main > p {
+    color: black;
+    margin: 9px 10px;
+    text-indent: 8px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-position: inside;
+    color: black;
+    margin-bottom: 20px;
+    text-indent: 8px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    background-image: linear-gradient(to right, #a18dca, transparent);
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    text-indent: 8px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+#df {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 650px){
+
+    header {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 10px 0px;
+    }
+
+    main {
+        margin: 10px;
+        margin: auto;
+        max-width: 500px;
+        height: auto;
+    }
+
+    #opçoes {
+        width: 350px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+    a {
+        margin: 10px;
+        height: 40px;
+    }
+}
